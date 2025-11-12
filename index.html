@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pH Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 id="myTitle">pH Calculator</h1>
+    <div class="calculator-container">
+        <div class="container">
+            <h3>Properties of the solution</h3>
+            <label id="calculateFromLabel" class="input-label" for="calculateFromInput">Calculate pH from...</label><br>
+            <select id="calculateFromInput" class="select-dropdown">
+                <option value="weakAcid" selected>Concentration of weak acid</option>
+                <option value="strongAcid">Concentration of strong acid</option>
+                <option value="strongBase">Concentration of strong base</option>
+            </select>
+            <label id="kaLabel" class="input-label" for="kaInput">Ka</label>
+            <input type="text" class="properties-textbox" id="kaInput">
+            <label id="concentrationLabel" class="input-label" for="concentrationInput">Concentration (M)</label>
+            <input type="text" class="properties-textbox" id="concentrationInput">
+            <button class = "calculate-button" id="myButton" onclick="calculate()">Calculate</button>
+        </div><br>
+        <div class="container">
+            <h3>Result</h3>
+            <label id="pHLabel" class="input-label">pH</label><br>
+            <input type="text" class="properties-textbox" id="resultTextbox"><br><br>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
