@@ -12,16 +12,22 @@
     <div class="calculator-container">
         <div class="container">
             <h3>Properties of the solution</h3>
+
             <label id="calculateFromLabel" class="input-label" for="calculateFromInput">Calculate pH from...</label><br>
             <select id="calculateFromInput" class="select-dropdown">
                 <option value="weakAcid" selected>Concentration of weak acid</option>
                 <option value="strongAcid">Concentration of strong acid</option>
                 <option value="strongBase">Concentration of strong base</option>
             </select>
+
             <label id="kaLabel" class="input-label" for="kaInput">Ka</label>
-            <input type="text" class="properties-textbox" id="kaInput">
+            <input type="text" class="properties-textbox" id="kaInput" required>
+            <span id="kaErrorMsg" class="error-msg hidden" >Ka must be a positive number</span><br>
+
             <label id="concentrationLabel" class="input-label" for="concentrationInput">Concentration (M)</label>
-            <input type="text" class="properties-textbox" id="concentrationInput">
+            <input type="text" class="properties-textbox" id="concentrationInput" required>
+            <span id="concErrorMsg" class="error-msg hidden">Concentration must be a positive number</span><br><br>
+
             <button class = "calculate-button" id="myButton" onclick="calculate()">Calculate</button>
         </div><br>
         <div class="container">

@@ -9,6 +9,7 @@ h1{
 }
 .input-label{
     color: hsl(0, 0%, 30%);
+    margin-top: 20px;
 }
 .container{
     background-color: white;
@@ -64,4 +65,11 @@ h1{
 }
 .errorAlert{
     border-color: red;
+}
+.error-msg{
+    margin-bottom: 20px;
+    background-color: rgb(249, 230, 230);
+    border-radius: 5px;
+    padding: 3px;
+    border: none;
 }
